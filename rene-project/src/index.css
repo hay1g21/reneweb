@@ -1,3 +1,6 @@
+
+
+
 .navbar{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position:sticky;
@@ -21,5 +24,51 @@
   text-decoration: none;
 }
 .navbar li a:hover{
-  background-color: aqua;
+  background-color: rgb(255, 165, 202);
+}
+
+.navbar li{
+  float:left;
+}
+
+body{
+  margin:0px;
+ 
+}
+
+main{
+  margin:20px;
+}
+
+.quoteBlock{
+  background-color: hsl(189, 100%, 92%);
+  
+  outline: auto;
+  outline-color: hsl(219, 45%, 71%);
+  padding: 0
+}
+
+.quoteBlock blockquote span::before{
+  content: '\201C';
+  font-size: 3em;
+  color: rgb(13, 54, 35);
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 1;
+  
+ 
+ 
+}
+
+.quoteBlock blockquote p{
+  text-align: left;
+  font-size: 20px;
+ 
+  
+  
+}
+.quoteBlock blockquote span::after{
+  content: '\201C';
+  font-size: 1em;
+  color: rgb(13, 54, 35);
 }

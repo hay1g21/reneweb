@@ -4,7 +4,7 @@
 function NavBar (){
     return(
     <>
-        <div className='navbar'>
+        <nav className='navbar'>
             <ul>
                 <li><a href ="#home">Home</a></li>
                 <li><a href ="#profile">René Magritte</a></li>
@@ -12,7 +12,7 @@ function NavBar (){
                 <li><a href ="#quiz">Quiz</a></li>
                 <li><a href ="#draw">Draw Surreal</a></li>
             </ul>
-        </div>    
+        </nav>    
     </>
     )
 }
