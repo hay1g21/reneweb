@@ -22,9 +22,12 @@ function App() {
         <QuoteBlock quote="If the dream is a translation of waking life, waking life is also a translation of the dream." name="René Magritte"></QuoteBlock>
         <p>In 1927, René Magritte had his first one-man show, which took place at the Galerie la Centauri in Brussels. During this period of his life, he was producing nearly one piece of art work each day, which made for an extensive showing, and a variety of unique styles for visitors of the exhibit to see. But critics heaped abuse on the exhibition. Depressed by the failure, he moved to Paris, where he makes the acquaintance of works of émigré avant-garde artists: Impressionist Claude Monet, Post-impressionists Van Gogh, Paul Cezanne, and Neo-impressionist Georges Seurat.</p>
       </main>
-      <div>
-        <h3>Card Grid here</h3>
-        <ImageCard source="/thetherapist.jpg" workName="The Therapist"></ImageCard>
+      <div className = "imgGrid" >
+        <h3>Favourite Paintings</h3>
+        <ImageCard source="/thetherapist.jpg" workName="The Therapist" date="1937"></ImageCard>
+        <ImageCard source="/falsemirror.jpg" workName="False Mirror" date="1928"></ImageCard>
+        <ImageCard source="/sonofman.jpg" workName="Son of Man" date="1935"></ImageCard>
+       
        
       </div>
     </>
