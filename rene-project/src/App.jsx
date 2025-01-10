@@ -3,6 +3,7 @@ import './App.css'
 import NavBar from './components/NavBar.jsx'
 import QuoteBlock from './components/QuoteBlock.jsx'
 import ImageCard from './components/ImageCard.jsx'
+import CardSlider from './components/CardSlider.jsx'
 function App() {
   
 
@@ -28,15 +29,26 @@ function App() {
         <ImageCard source="/thetherapist.jpg" workName="The Therapist" date="1937"></ImageCard>
         <ImageCard source="/falsemirror.jpg" workName="False Mirror" date="1928"></ImageCard>
         <ImageCard source="/sonofman.jpg" workName="Son of Man" date="1935"></ImageCard>
+        <ImageCard source="/TheHumanCondition1935.jpg" workName="The Human Condition" date="1935" alt = "The human condition"></ImageCard>
         
        
       </div>
+      <div>
+      <CardSlider>
+        <ImageCard source="/thetherapist.jpg" workName="The Therapist" date="1937"></ImageCard>
+        <ImageCard source="/falsemirror.jpg" workName="False Mirror" date="1928"></ImageCard>
+        <ImageCard source="/sonofman.jpg" workName="Son of Man" date="1935"></ImageCard>
+        <ImageCard source="/TheHumanCondition1935.jpg" workName="The Human Condition" date="1935" alt = "The human condition"></ImageCard>
+        <ImageCard source="/thetherapist.jpg" workName="The Therapist" date="1937"></ImageCard>
+        <ImageCard source="/falsemirror.jpg" workName="False Mirror" date="1928"></ImageCard>
+        <ImageCard source="/sonofman.jpg" workName="Son of Man" date="1935"></ImageCard>
+        <ImageCard source="/TheHumanCondition1935.jpg" workName="The Human Condition" date="1935" alt = "The human condition"></ImageCard>
+        
+      </CardSlider>
+      </div>
 
-      <div class = "container">
-            <div class ="item item-1">Item 1</div>
-            <div class ="item item-2">Item 2</div>
-            <div class ="item item-3">Item 3</div>
-            <div class ="item item-4">Item 4</div>
+      <div>
+        <h1>this is the sotry of a blue guy</h1>
       </div>
     </>
   )

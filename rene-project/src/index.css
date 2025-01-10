@@ -130,7 +130,7 @@ main{
   
   
   display: flex; /*flex alligns things horizontal because it puts them on the main axis */
-  justify-content: space-evenly; /* aligns content on main axis */
+  justify-content: center; /* aligns content on main axis */
   align-items: center;
   flex-wrap: wrap;
   
@@ -186,14 +186,48 @@ main{
   align-content: flex-start; /*only works when items are wrapping and flex wrap is set to wrap*/
   /*gap: 1em */
 }
-
-/* flex-grow: 1; /*lets item grow if enough space to do so*/
-.item-3{
-  order: -1; /*makes one item appear first DONT USE UNLESS NECESSARY SINCE IT MESSES WITH USABILITY*/
-}
-.item-2{
+.cardSliderOutside{
+  width: 100%;
+  margin:0 auto;
+  height:100%;
+  display:flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
  
-}
-.item-1{
   
+}
+.cardSliderContainer{
+  width: 90%;
+  margin:0 auto;
+  height:420px;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid;
+  background-color: #ebeeee;
+}
+
+.cardSlider{
+  
+  width: 100%;
+  height:100%;
+  white-space: nowrap; /*keeps everything on the same line*/
+  overflow-x:scroll;
+}
+
+.cardSlider::webkit-scrollbar{
+  display: none;
+}
+
+.slider-butt-left, .slider-butt-right{
+  background:white;
+  border-radius:100%;
+  box-shadow: 0px 0px 10px #afabab;
+  opacity:0.2;
+  cursor:pointer;
+}
+.slider-butt-left:hover , .slider-butt-right:hover{
+  opacity:1;
 }
