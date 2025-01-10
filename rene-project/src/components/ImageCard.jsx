@@ -12,7 +12,7 @@ function ImageCard(props){
              </div>
              : null}
             <img src={props.source} alt={props.alt}></img>
-            <div>
+            <div className = "imgName">
                 <h4><a href="">{props.workName}</a></h4>
             </div>
         </div>
