@@ -9,11 +9,13 @@ h3{
 }
 .navbar{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  position:sticky;
+  position:fixed;
   top:0;
+  width: 100%;
+ 
   overflow:hidden;
   background-color: rgba(46, 67, 87,0.7);
-  
+ 
   
 }
 
@@ -33,7 +35,27 @@ h3{
   
   }
 }
+@keyframes expandBar {
+    from {padding:20px 20px;}
+    to {padding:25px 20px;}
+}
 
+@keyframes deExpand {
+  from {padding:25px 20px;}
+  to {padding:20px 20px;}
+}
+
+.navAnim{
+  animation-name: expandBar;
+  animation-duration:.5s;
+  animation-fill-mode: forwards;
+}
+
+.navAnimRev{
+  animation-name: deExpand;
+  animation-duration:.5s;
+  animation-fill-mode: forwards;
+}
 .navbar li a{
   display: block;
   padding: 20px 20px;
@@ -41,9 +63,14 @@ h3{
   text-align: center;
   text-decoration: none;
   height: 100%;
+  
 }
 .navbar li a:hover{
   background-color: rgb(255, 165, 202);
+}
+
+.navBar ul{
+  
 }
 
 .navbar li{
