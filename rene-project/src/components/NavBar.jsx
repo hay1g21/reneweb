@@ -1,9 +1,17 @@
 import { useState } from "react";
-
+import { useEffect } from "react";
 
 function NavBar (){
-    const [expand, setExpand] = useState(false);
-    
+    const [expand, setExpand] = useState(true);
+    const setScroll= () =>{
+        window.scrollY === 0 ? setExpand(true) : setExpand(false);
+    }
+    useEffect(() =>{
+        window.addEventListener("scroll", setScroll)
+        return () =>{
+            window.removeEventListener("scroll",setScroll);
+        };
+    },[])
     return(
     <>
         <nav className='navbar'>
@@ -13,10 +21,10 @@ function NavBar (){
                 <li><a href ="#favourites" className={expand ? "navAnim" : "navAnimRev"}>Author's Favourites</a></li>
                 <li><a href ="#quiz" className={expand ? "navAnim" : "navAnimRev"}>Quiz</a></li>
                 <li><a href ="#draw" className={expand ? "navAnim" : "navAnimRev"}>Draw Surreal</a></li>
-                <button onClick={() => expand ? setExpand(false) : setExpand(true)}>CLICK HERE</button>
             </ul>
-           
-        </nav>    
+            
+        </nav>  
+        <button className='toTop arrow' onClick={() => setExpand(true)}>^</button> 
     </>
     )
 }

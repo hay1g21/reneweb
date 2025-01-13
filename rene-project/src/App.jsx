@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-    <>
+    < >
       <NavBar></NavBar>
       <div className = "mainDiv">
         <h3 className = "welcome">Welcome to the René Magritte Website</h3>
