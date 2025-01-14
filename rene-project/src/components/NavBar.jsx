@@ -1,10 +1,21 @@
 import { useState } from "react";
 import { useEffect } from "react";
-
+import { useRef } from "react";
 function NavBar (){
     const [expand, setExpand] = useState(true);
+    const [goTop, setGoTop] = useState(false);
+    
+    const handleScrollUp = () => {
+        window.scrollTo({left:0,top:0, behavior:"smooth"})
+    }
     const setScroll= () =>{
         window.scrollY === 0 ? setExpand(true) : setExpand(false);
+
+        if(window.scrollY > 50){
+            setGoTop(true)
+        }else{
+            setGoTop(false)
+        }
     }
     useEffect(() =>{
         window.addEventListener("scroll", setScroll)
@@ -24,7 +35,8 @@ function NavBar (){
             </ul>
             
         </nav>  
-        <button className='toTop arrow' onClick={() => setExpand(true)}>^</button> 
+        {goTop ? <button className='toTop arrow' onClick={handleScrollUp}>^</button> : null}
+        
     </>
     )
 }
