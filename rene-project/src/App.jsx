@@ -37,7 +37,7 @@ function App() {
           
         
         </div>
-        
+        <h3>More Paintings</h3>
         <div>
           <CardSlider>
             <ImageCard source="/thetherapist.jpg" workName="The Therapist" date="1937"></ImageCard>
@@ -52,7 +52,7 @@ function App() {
           </CardSlider>
         </div>
       </div>
-     
+      
       <footer>
         <p>Designed by Henry York</p>
       </footer>

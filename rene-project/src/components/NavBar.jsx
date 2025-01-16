@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
+
 function NavBar (){
     const [expand, setExpand] = useState(true);
     const [goTop, setGoTop] = useState(false);
@@ -35,7 +36,7 @@ function NavBar (){
             </ul>
             
         </nav>  
-        {goTop ? <button className='toTop arrow' onClick={handleScrollUp}>^</button> : null}
+        {goTop ? <button className='toTop arrow fadeInTop' onClick={handleScrollUp}>^</button> : null}
         
     </>
     )
