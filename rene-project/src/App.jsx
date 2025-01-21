@@ -44,13 +44,15 @@ function App() {
             <ImageCard source="/falsemirror.jpg" workName="False Mirror" date="1928"></ImageCard>
             <ImageCard source="/sonofman.jpg" workName="Son of Man" date="1935"></ImageCard>
             <ImageCard source="/TheHumanCondition1935.jpg" workName="The Human Condition" date="1935" alt = "The human condition"></ImageCard>
-            <ImageCard source="/thetherapist.jpg" workName="The Therapist" date="1937"></ImageCard>
-            <ImageCard source="/falsemirror.jpg" workName="False Mirror" date="1928"></ImageCard>
-            <ImageCard source="/sonofman.jpg" workName="Son of Man" date="1935"></ImageCard>
-            <ImageCard source="/TheHumanCondition1935.jpg" workName="The Human Condition" date="1935" alt = "The human condition"></ImageCard>
+            <ImageCard source="/Golconde.jpg" workName="Golconda" date="1953"></ImageCard>
+            <ImageCard source="/attempting-the-impossible.jpg" workName="Attempting The Impossible" date="1928"></ImageCard>
+            <ImageCard source="/the-treachery-of-images.jpg" workName="The Treachery of Images" date="1929"></ImageCard>
+            <ImageCard source="/the-blank-signature.jpg" workName="The Blank Signature" date="1965" alt = "The human condition"></ImageCard>
             
           </CardSlider>
         </div>
+
+        
       </div>
       
       <footer>
