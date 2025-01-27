@@ -13,6 +13,7 @@ function App() {
       
       <div className = "mainDiv">
         <h3 className = "welcome">Welcome to the René Magritte Website</h3>
+       
         <main>
           
           <p>René Magritte was an internationally acclaimed surrealist artist of all time, yet it was not until his 50s, when he was finally able to reach some form of fame and recognition for his work. René Magritte described his paintings saying, "My painting is visible images which conceal nothing; they evoke mystery and, indeed, when one sees one of my pictures, one asks oneself this simple question, 'What does that mean?' It does not mean anything, because mystery means nothing, it is unknowable."</p>
@@ -26,7 +27,7 @@ function App() {
           <p>In 1927, René Magritte had his first one-man show, which took place at the Galerie la Centauri in Brussels. During this period of his life, he was producing nearly one piece of art work each day, which made for an extensive showing, and a variety of unique styles for visitors of the exhibit to see. But critics heaped abuse on the exhibition. Depressed by the failure, he moved to Paris, where he makes the acquaintance of works of émigré avant-garde artists: Impressionist Claude Monet, Post-impressionists Van Gogh, Paul Cezanne, and Neo-impressionist Georges Seurat.</p>
           <br></br>
         </main>
-        <h3>Favourite Paintings</h3>
+        <h3 id = "favourites">Favourite Paintings</h3>
         
         <div className = "imgGrid" >
           

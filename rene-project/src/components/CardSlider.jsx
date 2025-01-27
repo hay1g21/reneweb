@@ -18,11 +18,11 @@ function CardSlider(props){
         <>
             <section className= "cardSliderOutside">
                 <div className="cardSliderContainer">
-                    <button className="slider-butt-left" onClick={() => handleScrollLeft()}>Left</button>
+                    <button className="slider-butt-left" onClick={() => handleScrollLeft()}>&lt;</button>
                     <div className="cardSlider" ref={containerRef}>
                          {props.children}
                     </div>
-                    <button className="slider-butt-right" onClick={() => handleScrollRight()} >Right</button>
+                    <button className="slider-butt-right" onClick={() => handleScrollRight()} >&gt;</button>
                     
                 </div>
                 
