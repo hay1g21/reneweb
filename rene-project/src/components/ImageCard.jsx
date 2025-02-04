@@ -4,7 +4,7 @@ function ImageCard(props){
     const [showInfo, setShow] = useState(false);
 
     return (
-        <div className = "imgCard" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+        <div className = "imgCard" onMouseEnter={() => setShow(false)} onMouseLeave={() => setShow(false)}>
             {showInfo ?
              <div className = "imgOverlay">
                 <h2>{props.workName + ", " + props.date}</h2>
